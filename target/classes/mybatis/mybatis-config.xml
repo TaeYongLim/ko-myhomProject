@@ -24,5 +24,6 @@
 		
 		
 		<typeAlias type="com.myhome.www.article.dto.Article" alias="articleDTO"/>
+		<typeAlias alias="comment" type="com.myhome.www.article.dto.Comment"/>
 	</typeAliases>
 </configuration>

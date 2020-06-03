@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.myhome.www.member.dto.Member;
 import com.myhome.www.member.service.AuthInfo;
-import com.myhome.www.member.service.LoginCommand;
 import com.myhome.www.member.service.MemberService;
 import com.myhome.www.member.service.RegisterRequest;
 

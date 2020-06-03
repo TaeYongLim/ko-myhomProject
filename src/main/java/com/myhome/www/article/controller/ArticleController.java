@@ -13,12 +13,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
-
 import com.myhome.www.article.dto.Article;
+import com.myhome.www.article.dto.Comment;
 import com.myhome.www.article.service.ArticleService;
-import com.myhome.www.item.dto.Item;
 import com.myhome.www.member.service.AuthInfo;
 
 @Controller
@@ -141,4 +138,5 @@ public class ArticleController {
       model.addAttribute("articleList", articleList);
       return "admin/articleManager/articleList";
    }
+
 }

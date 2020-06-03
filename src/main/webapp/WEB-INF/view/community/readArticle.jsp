@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/view/include/header.jsp" %>
-
 <script type="text/javascript">
 	$(function() {
 		$('#modifyBtn').click(function() {
@@ -71,5 +70,26 @@
 			</tbody>
 		</table>
 	</form:form>
-</body>
+	
+	<hr/>
+	
+  <!--  댓글  -->
+  
+  	<form action="insertComment" method="post">
+  	<input type="hidden" value="{article.articleNo}" name="articleNo">
+  		댓글 : <input type="text" name="content">
+  	<input type="submit" value="댓글등록">
+	</form>
+	
+	<br>
+	 	댓글목록
+	<br>
+	<c:forEach item="${comment}" var="comment">
+		${comment.memberNo} : ${comment.commentContent } : #{comment.regdate }
+	<br>
+	
+	</c:forEach>
+	
+	
+    </body>
 </html>

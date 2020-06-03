@@ -2,18 +2,12 @@ package com.myhome.www.article.service.impl;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.myhome.www.article.dto.Article;
 import com.myhome.www.article.service.ArticleService;
-import com.myhome.www.item.service.impl.ItemMapper;
-import com.myhome.www.member.service.AuthInfo;
 
 @Service("articleService")
 @Transactional
